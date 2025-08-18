@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webkraf - Developer website</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" type="jpg" href="61e87eaa991a5a578e4717a5fb1f5dc4.jpg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <span class="brand-icon">&lt;/&gt;</span>
+          <span class="brand-text" id="text" data-aos-duration="10000"></span>
+
+          <script>
+            const text = "WEBKRAF ";
+            let index = 0;
+            function typeEffect() {
+              if (index < text.length) {
+                document.getElementById("text").innerHTML +=
+                  text[index] + "&nbsp;";
+                index++;
+                setTimeout(typeEffect, 320);
+              }
+            }
+            typeEffect();
+          </script>
+        </div>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#Contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-bg">
+        <div class="floating-elements">
+          <div class="float-element">💻</div>
+          <div class="float-element">🚀</div>
+          <div class="float-element">⚡</div>
+          <div class="float-element">🎨</div>
+          <div class="float-element">📱</div>
+          <div class="float-element">🌐</div>
+        </div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            <span class="title-line">Wujudkan</span>
+            <span class="title-line highlight">Website Impian</span>
+            <span class="title-line">Anda Bersama Kami</span>
+          </h1>
+          <p class="hero-description">
+            Kami adalah tim developer berpengalaman yang siap membantu bisnis
+            Anda berkembang dengan website yang modern, cepat, dan user-friendly
+          </p>
+          <div class="hero-buttons">
+            <button class="btn btn-primary" id="startProject">
+              Mulai Project
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Layanan Kami</h2>
+          <p class="section-subtitle">
+            Solusi digital terlengkap untuk kebutuhan bisnis modern
+          </p>
+        </div>
+        <div class="services-grid">
+          <div
+            class="service-card featured"
+            data-service="web"
+            data-aos="fade-right"
+            data-aos-duration="3000"
+          >
+            <div class="featured-badge">🔥 Popular</div>
+            <div class="service-icon">🌐</div>
+            <h3>Website Development</h3>
+            <p>
+              Pembuatan website custom dengan teknologi terkini dan performa
+              optimal
+            </p>
+            <ul class="service-features">
+              <li>Responsive Design</li>
+              <li>SEO Optimized</li>
+              <li>Fast Loading</li>
+              <li>Modern UI/UX</li>
+            </ul>
+            <div class="service-price">Mulai 500-1jt</div>
+          </div>
+
+          <div
+            class="service-card featured"
+            data-service="ecommerce"
+            data-aos="fade-left"
+            data-aos-duration="3000"
+          >
+            <div class="featured-badge">🔥 Popular</div>
+            <div class="service-icon">🎨</div>
+            <h3>Desaign Poster Digital</h3>
+            <p>
+              Nikmati kemudahan memesan desain poster profesional dengan sistem
+              yang praktis dan modern.
+            </p>
+            <ul class="service-features">
+              <li>File Digital Siap Pakai</li>
+              <li>Revisi Fleksibel</li>
+              <li>Revisi Fleksibel</li>
+              <li>Pesan & Bayar Online</li>
+            </ul>
+            <div class="service-price">Mulai 600</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="Contact" class="team">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Contact</h2>
+          <p class="section-subtitle">
+            Siap membantu mewujudkan ide digital Anda menjadi kenyataan
+          </p>
+        </div>
+        <div class="team-grid">
+          <div class="team-member" data-aos="fade-up" data-aos-duration="3000">
+            <div class="member-avatar">📧</div>
+            <div class="member-info">
+              <h3>Email kami</h3>
+              <p class="member-role">lutfiandika33@gmail.com</p>
+              <p class="member-desc">
+                kalian bisa menghubungi kami melalui email
+              </p>
+              <!-- <div class="member-skills">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>AWS</span>
+                        </div> -->
+            </div>
+          </div>
+
+          <div class="team-member" data-aos="fade-up" data-aos-duration="2000">
+            <div class="member-avatar">📱</div>
+            <div class="member-info">
+              <h3>Telepon</h3>
+              <p class="member-role"></p>
+              <p class="member-desc">
+                kalian bisa menguhungi kami melalui telepon selain melalui email
+              </p>
+              <!-- <div class="member-skills">
+                            <span>Figma</span>
+                            <span>Adobe XD</span>
+                            <span>Prototyping</span>
+                        </div> -->
+            </div>
+          </div>
+
+          <div class="team-member" data-aos="fade-up" data-aos-duration="1000">
+            <div class="member-avatar">📍</div>
+            <div class="member-info">
+              <h3>Alamat</h3>
+              <p class="member-role">DevOps Engineer</p>
+              <p class="member-desc">
+                kalian secara langsung bisa mengunjungi alamat kami
+              </p>
+              <!-- <div class="member-skills">
+                            <span>Docker</span>
+                            <span>Kubernetes</span>
+                            <span>CI/CD</span>
+                        </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3 class="footer-logo">Webkraf</h3>
+            <p class="footer-description">
+              Sebagai penyedia layanan pembuatan website, kami menghadirkan
+              solusi digital yang profesional, aman, dan mudah digunakan. Kami
+              percaya setiap bisnis layak memiliki website yang mampu
+              meningkatkan kepercayaan dan penjualan.
+            </p>
+          </div>
+
+          <div class="footer-section">
+            <h4>Produk</h4>
+            <ul class="footer-links">
+              <li><a href="#products">Web Development</a></li>
+              <li><a href="#products">Desaign Poster Digital</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Contact</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="#Contact">📧 lutfiandika33@gmail.com</a>
+              </li>
+              <li><a href="#warranty">📱+62 812-9543-1853 </a></li>
+              <li><a href="#repair">📍Perumahan Puri Cendana Block G11 Nomer 5</a></li>
+            </ul>
+          </div>
+
+         
+
+          <div class="footer-section">
+            <h4>Newsletter</h4>
+            <p class="newsletter-text">
+              Dapatkan update terbaru tentang produk dan penawaran khusus
+            </p>
+            <form class="newsletter-form">
+              <div class="newsletter-input-group">
+                <input type="email" placeholder="Email Anda" required />
+                <button type="submit">📧</button>
+              </div>
+            </form>
+            <!-- <div class="footer-contact">
+              <p>📞 +62 21 1234 5678</p>
+              <p>📧 info@techgadgetpro.co.id</p>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-bottom">
+          <div class="footer-bottom-left">
+            <p>
+              &copy; 2025 Webkraf. Web Development.
+            </p>
+          </div>
+          <div class="footer-bottom-right">
+            <a href="#privacy">Kebijakan Privasi</a>
+            <a href="#terms">Syarat & Ketentuan</a>
+            <a href="#cookies">Kebijakan Cookie</a>
+          </div>
+        </div>
+
+        <div class="back-to-top" id="backToTop">
+          <span>⬆️</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <script src="script.js"></script> -->
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+      <span>↑</span>
+    </button>
+  </body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>
