@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>portofolio</title>
+   <link rel="icon" type="jpg" href="61e87eaa991a5a578e4717a5fb1f5dc4.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+ 
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body{
+      font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#fff;
+      background-color:black;
+      background-image:linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
+                       linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px);
+      background-size:50px 50px;
+      background-position:center;
+      transition:background-position 0.1s ease-out;
+    }
+    .frame{
+      width:min(1100px,94%);
+      padding:48px;
+      border-radius:12px;
+      text-align:center;
+      backdrop-filter:blur(6px);
+      background:rgba(0,0,0,0.4);
+      box-shadow:0 12px 50px rgba(11,15,30,0.6);
+    }
+    h1{font-size:clamp(20px,3.5vw,36px);letter-spacing:0.6px;margin-bottom:8px}
+    p{opacity:0.9}
+    @media (max-width:520px){.frame{padding:28px}}
+    .frame:hover{
+      color: aliceblue;
+    }
+    .brand-icon{
+        font-size: 3rem;
+        text-align: center;
+        /* padding: 3rem; */
+        color: #667eea;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+
+    }
+    #text{
+      font-size: 2.9rem;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+
+    }
+    .p{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.7rem;
+    }
+     body {
+       margin: 0;
+      height: 100vh;
+    }
+
+    .social-navbar {
+       position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      padding: 15px 25px;
+      border-radius: 50px;
+      display: flex;
+      gap: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+
+    .social-navbar a {
+      color: white;
+      font-size: 1.2rem;
+      text-decoration: none;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 12px;
+      border-radius: 50%;
+      transition: 0.3s ease;
+    }
+
+    .social-navbar a:hover {
+      transform: translateY(-5px) scale(1.1);
+    }
+
+    .facebook:hover { background: #1877f2; }
+    .github:hover { background: #1da1f2; }
+    .instagram:hover { background: #e1306c; }
+    .tiktok:hover { background: black; }
+  </style>
+</head>
+<body>
+
+ <!-- <nav class="social-navbar">
+    <a href="https://github.com/" target="_blank" class="github"><i class="fab fa-github"></i></a>
+    <a href="https://instagram.com" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.tiktok.com/id-ID/" target="_blank" class="tiktok"><i class="fab fa-tiktok"></i></a>
+  </nav> -->
+
+<header class="hero" id="home">
+      <span class="brand-icon">&lt;/&gt;</span>
+          <span class="brand-text" id="text" data-aos-duration="10000"></span>
+
+          <script>
+            const text = "WEBKRAF ";
+            let index = 0;
+            function typeEffect() {
+              if (index < text.length) {
+                document.getElementById("text").innerHTML +=
+                  text[index] + "&nbsp;";
+                index++;
+                setTimeout(typeEffect, 320);
+              }
+            }
+            typeEffect();
+          </script>
+
+        <p class="p">
+            Welcome to the Webkraf website
+        </p>
+      </div>
+</header>
+  <script>
+    document.addEventListener('mousemove', e => {
+      const x = e.clientX / window.innerWidth * 100;
+      const y = e.clientY / window.innerHeight * 100;
+      document.body.style.backgroundPosition = `${x}px ${y}px`;
+    });
+
+    document.addEventListener('touchmove', e => {
+      const touch = e.touches[0];
+      const x = touch.clientX / window.innerWidth * 100;
+      const y = touch.clientY / window.innerHeight * 100;
+      document.body.style.backgroundPosition = `${x}px ${y}px`;
+    });
+  </script>
+
+  <script>
+   
+   
+    setTimeout(function() {
+        window.location.href = "index.html";
+    }, 25500);
+
+</script>
+
+
+    <script>
+      const toggleHeart = document.getElementById('heart');
+    toggleHeart.addEventListener('click', () => {
+        toggleHeart.classList.toggle('fa-solid')
+        if (toggleHeart.classList == 'fa-regular fa-heart fa-solid') {
+            toggleHeart.style.color = 'red'
+        }
+        else {
+            toggleHeart.style.color = 'white'
+        }
+    })
+    </script>
+</body>
+</html>
